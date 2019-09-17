@@ -81,7 +81,7 @@ header {
         font-size: 22px;
       }
     }
-
+//Добаить ховер анимацию
     a {
       font-size: 16px;
       font-weight: bold;
@@ -208,4 +208,39 @@ header {
     text-align: center;
   }
 }
-
+.skills{
+  padding-top: 50px;
+  @media screen and (min-width: 1050px) {
+    padding-top: 100px;
+  }
+  h2{
+    text-align: center;
+    text-transform: uppercase;
+    @include font-main;
+    @include main-color;
+    font-size: 46px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 8px;
+    @media screen and (min-width: 1050px) {
+      margin-bottom: 65px;
+    }
+  }
+  h2:before {
+    content: " ";
+    border-bottom: 4px solid #717171;
+    display: block;
+    width: 60px;
+    margin: auto;
+  }
+  img{
+    display: block;
+    margin: auto;
+    height: auto;
+    width: 100%;
+    margin-bottom: 30px;
+    @media screen and (min-width: 1050px) {
+      margin-bottom: 120px;
+    }
+  }
+}

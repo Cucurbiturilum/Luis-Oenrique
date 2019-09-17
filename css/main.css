@@ -168,4 +168,47 @@ header .hero img {
   text-align: center;
 }
 
+.skills {
+  padding-top: 50px;
+}
+@media screen and (min-width: 1050px) {
+  .skills {
+    padding-top: 100px;
+  }
+}
+.skills h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Asap", sans-serif;
+  color: #717171;
+  font-size: 46px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: 8px;
+}
+@media screen and (min-width: 1050px) {
+  .skills h2 {
+    margin-bottom: 65px;
+  }
+}
+.skills h2:before {
+  content: " ";
+  border-bottom: 4px solid #717171;
+  display: block;
+  width: 60px;
+  margin: auto;
+}
+.skills img {
+  display: block;
+  margin: auto;
+  height: auto;
+  width: 100%;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1050px) {
+  .skills img {
+    margin-bottom: 120px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
