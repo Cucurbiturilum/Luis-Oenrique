@@ -2,9 +2,26 @@
   font-family: 'Asap', sans-serif;
 }
 
+@mixin title-color {
+  color: #4d4d4d;
+}
+
+@mixin text-color {
+  color: #909090;;
+}
+@mixin main-color{
+  color: #717171;
+}
+
 
 header {
-  background-image: url(../images/backgroung_header.png);
+  background: repeating-linear-gradient(
+                  -65deg,
+                  #dedede,
+                  #dedede 200px,
+                  #e2e2e2 200px,
+                  #e2e2e2 400px
+  );
   @include font-main;
 
   .navbar {
@@ -27,7 +44,7 @@ header {
         a {
           @include font-main;
           font-size: 16px;
-          color: #4d4d4d;
+          @include title-color;
           text-transform: uppercase;
         }
 
@@ -41,25 +58,25 @@ header {
 
   .title {
     padding-top: 50px;
-    @media screen and (min-width: 1050px){
+    @media screen and (min-width: 1050px) {
       padding-top: 160px;
     }
 
     h1 {
       font-size: 60px;
       font-weight: bold;
-      color: #4d4d4d;
-      @media screen and (min-width: 380px){
+      @include title-color;
+      @media screen and (min-width: 380px) {
         font-size: 90px;
       }
     }
 
     p {
-      color: #909090;
+      @include text-color;
       font-size: 20px;
       font-weight: bold;
       margin-bottom: 30px;
-      @media screen and (min-width: 380px){
+      @media screen and (min-width: 380px) {
         font-size: 22px;
       }
     }
@@ -67,13 +84,14 @@ header {
     a {
       font-size: 16px;
       font-weight: bold;
-      color: #4d4d4d;
+      @include title-color;
       text-transform: uppercase;
       padding: 20px 30px;
       margin-right: 20px;
       border: solid 1px black;
       display: inline-block;
       margin-bottom: 15px;
+      box-sizing: border-box;
     }
 
     a:hover {
@@ -92,6 +110,81 @@ header {
 
 }
 
+.about_me {
+  padding-top: 50px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1050px) {
+    padding-top: 100px;
+    padding-bottom: 125px;
+  }
 
+  h2 {
+    @include font-main;
+    @include main-color;
+    font-size: 46px;
+    font-weight: bold;
+    text-transform: uppercase;
+    @media screen and (min-width: 1050px) {
+      padding-top: 70px;
+    }
+  }
 
+  h2:before {
+    content: " ";
+    border-bottom: 4px solid #717171;
+    display: block;
+    width: 60px;
+  }
+
+  span {
+    display: block;
+  }
+
+  p {
+    @include font-main;
+    font-weight: 500;
+    font-size: 16px;
+    @include main-color;
+    margin-bottom: 35px;
+  }
+
+  a {
+    font-size: 16px;
+    font-weight: bold;
+    @include main-color;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    border: solid 1px black;
+    display: inline-block;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+
+  img {
+    height: auto;
+    width: 100%;
+  }
+
+}
+.service{
+  background-color: #f6f6f6;
+  padding-top: 120px;
+  h2{
+    text-align: center;
+    text-transform: uppercase;
+    @include font-main;
+    @include main-color;
+    font-size: 46px;
+    font-weight: bold;
+    margin-bottom: 70px;
+  }
+  h2:before {
+    content: " ";
+    border-bottom: 4px solid #717171;
+    display: block;
+    width: 60px;
+    margin: auto;
+  }
+
+}
 
