@@ -9,7 +9,8 @@
 @mixin text-color {
   color: #909090;;
 }
-@mixin main-color{
+
+@mixin main-color {
   color: #717171;
 }
 
@@ -124,6 +125,7 @@ header {
     font-size: 46px;
     font-weight: bold;
     text-transform: uppercase;
+    letter-spacing: 8px;
     @media screen and (min-width: 1050px) {
       padding-top: 70px;
     }
@@ -166,10 +168,12 @@ header {
   }
 
 }
-.service{
+
+.service {
   background-color: #f6f6f6;
   padding-top: 120px;
-  h2{
+
+  h2 {
     text-align: center;
     text-transform: uppercase;
     @include font-main;
@@ -177,7 +181,9 @@ header {
     font-size: 46px;
     font-weight: bold;
     margin-bottom: 70px;
+    letter-spacing: 8px;
   }
+
   h2:before {
     content: " ";
     border-bottom: 4px solid #717171;
@@ -186,5 +192,20 @@ header {
     margin: auto;
   }
 
+  .services {
+    margin-bottom: 85px;
+  }
+  img{
+    display: block;
+    margin: auto;
+    padding-bottom: 20px;
+  }
+  p {
+    @include font-main;
+    font-size: 24px;
+    font-weight: bold;
+    @include title-color;
+    text-align: center;
+  }
 }
 

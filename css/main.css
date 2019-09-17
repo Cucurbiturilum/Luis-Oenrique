@@ -92,6 +92,7 @@ header .hero img {
   font-size: 46px;
   font-weight: bold;
   text-transform: uppercase;
+  letter-spacing: 8px;
 }
 @media screen and (min-width: 1050px) {
   .about_me h2 {
@@ -142,6 +143,7 @@ header .hero img {
   font-size: 46px;
   font-weight: bold;
   margin-bottom: 70px;
+  letter-spacing: 8px;
 }
 .service h2:before {
   content: " ";
@@ -149,6 +151,21 @@ header .hero img {
   display: block;
   width: 60px;
   margin: auto;
+}
+.service .services {
+  margin-bottom: 85px;
+}
+.service img {
+  display: block;
+  margin: auto;
+  padding-bottom: 20px;
+}
+.service p {
+  font-family: "Asap", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #4d4d4d;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
