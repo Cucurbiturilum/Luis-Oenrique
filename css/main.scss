@@ -1,0 +1,97 @@
+@mixin font-main {
+  font-family: 'Asap', sans-serif;
+}
+
+
+header {
+  background-image: url(../images/backgroung_header.png);
+  @include font-main;
+
+  .navbar {
+    padding-top: 30px;
+  }
+
+  .navbar-brand {
+    padding: 0 15px;
+    height: 60px;
+  }
+
+  .navbar-default {
+    border: none;
+    background-image: none;
+    box-shadow: none;
+    background-color: transparent;
+
+    .navbar-nav {
+      li {
+        a {
+          @include font-main;
+          font-size: 16px;
+          color: #4d4d4d;
+          text-transform: uppercase;
+        }
+
+        a:hover {
+          text-transform: none;
+          border-bottom: 1px solid #4d4d4d;
+        }
+      }
+    }
+  }
+
+  .title {
+    padding-top: 50px;
+    @media screen and (min-width: 1050px){
+      padding-top: 160px;
+    }
+
+    h1 {
+      font-size: 60px;
+      font-weight: bold;
+      color: #4d4d4d;
+      @media screen and (min-width: 380px){
+        font-size: 90px;
+      }
+    }
+
+    p {
+      color: #909090;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      @media screen and (min-width: 380px){
+        font-size: 22px;
+      }
+    }
+
+    a {
+      font-size: 16px;
+      font-weight: bold;
+      color: #4d4d4d;
+      text-transform: uppercase;
+      padding: 20px 30px;
+      margin-right: 20px;
+      border: solid 1px black;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+
+    a:hover {
+      background-color: #fff;
+      border: none;
+      text-decoration: none;
+    }
+  }
+
+  .hero {
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+}
+
+
+
+
