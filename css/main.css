@@ -411,4 +411,81 @@ header .hero img {
   font-weight: normal;
 }
 
+#contact {
+  background-image: url(../images/footer.png);
+  padding-top: 120px;
+}
+#contact h2 {
+  font-family: "Asap", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Asap", sans-serif;
+  color: #717171;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 8px;
+  color: white;
+  margin-bottom: 70px;
+}
+@media screen and (min-width: 380px) {
+  #contact h2 {
+    font-size: 46px;
+  }
+}
+#contact h2:before {
+  content: " ";
+  border-bottom: 4px solid white;
+  display: block;
+  width: 60px;
+  margin: auto;
+}
+#contact .form-inline {
+  margin-bottom: 30px;
+}
+#contact .form-control {
+  width: 100%;
+  border-radius: 0;
+  border: none;
+}
+#contact input::placeholder, #contact textarea::placeholder {
+  font-family: "Asap", sans-serif;
+  color: #4d4d4d;
+  font-size: 16px;
+}
+#contact .message {
+  margin: 30px 0;
+  height: 210px;
+}
+#contact .btn {
+  display: block;
+  margin: auto;
+}
+#contact .btn-default {
+  border: none;
+  border-radius: 0;
+  font-family: "Asap", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  background-image: none;
+  padding: 0 30px;
+  line-height: 40px;
+}
+#contact .social {
+  border-top: 1px solid white;
+}
+#contact .social div {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  margin: 30px 10px;
+  font-size: 15px;
+  text-align: center;
+}
+#contact .social div a i {
+  padding: 7px;
+  font-size: 16px;
+  color: #4d4d4d;
+}
+
 /*# sourceMappingURL=main.css.map */
