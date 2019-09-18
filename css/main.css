@@ -92,10 +92,15 @@ header .hero img {
   text-transform: uppercase;
   font-family: "Asap", sans-serif;
   color: #717171;
-  font-size: 46px;
+  font-size: 30px;
   font-weight: bold;
   letter-spacing: 8px;
   text-align: left;
+}
+@media screen and (min-width: 380px) {
+  .about_me h2 {
+    font-size: 46px;
+  }
 }
 @media screen and (min-width: 1050px) {
   .about_me h2 {
@@ -143,10 +148,15 @@ header .hero img {
   text-transform: uppercase;
   font-family: "Asap", sans-serif;
   color: #717171;
-  font-size: 46px;
+  font-size: 30px;
   font-weight: bold;
   letter-spacing: 8px;
   margin-bottom: 70px;
+}
+@media screen and (min-width: 380px) {
+  #service h2 {
+    font-size: 46px;
+  }
 }
 #service h2:before {
   content: " ";
@@ -184,10 +194,15 @@ header .hero img {
   text-transform: uppercase;
   font-family: "Asap", sans-serif;
   color: #717171;
-  font-size: 46px;
+  font-size: 30px;
   font-weight: bold;
   letter-spacing: 8px;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 380px) {
+  #skills h2 {
+    font-size: 46px;
+  }
 }
 @media screen and (min-width: 1050px) {
   #skills h2 {
@@ -216,17 +231,27 @@ header .hero img {
 
 #portfolio {
   background-color: #f6f6f6;
-  padding-top: 125px;
+  padding-top: 50px;
+}
+@media screen and (min-width: 1050px) {
+  #portfolio {
+    padding-top: 125px;
+  }
 }
 #portfolio h2 {
   text-align: center;
   text-transform: uppercase;
   font-family: "Asap", sans-serif;
   color: #717171;
-  font-size: 46px;
+  font-size: 30px;
   font-weight: bold;
   letter-spacing: 8px;
   margin-bottom: 45px;
+}
+@media screen and (min-width: 380px) {
+  #portfolio h2 {
+    font-size: 46px;
+  }
 }
 #portfolio h2:before {
   content: " ";
@@ -242,7 +267,12 @@ header .hero img {
 }
 #portfolio .load-more {
   text-align: center;
-  margin-bottom: 125px;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 1050px) {
+  #portfolio .load-more {
+    margin-bottom: 125px;
+  }
 }
 #portfolio .btn-primary {
   background-image: none;
@@ -267,6 +297,89 @@ header .hero img {
   background-color: transparent;
   box-shadow: none;
   border: none;
+}
+
+#testimonials {
+  padding-top: 50px;
+}
+@media screen and (min-width: 1050px) {
+  #testimonials {
+    padding-top: 125px;
+  }
+}
+#testimonials h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Asap", sans-serif;
+  color: #717171;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 8px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 380px) {
+  #testimonials h2 {
+    font-size: 46px;
+  }
+}
+#testimonials h2:before {
+  content: " ";
+  border-bottom: 4px solid #717171;
+  display: block;
+  width: 60px;
+  margin: auto;
+}
+#testimonials .user {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  #testimonials .user {
+    text-align: left;
+  }
+}
+#testimonials h3 {
+  font-family: "Asap", sans-serif;
+  text-transform: uppercase;
+  color: #4d4d4d;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  #testimonials h3 {
+    text-align: left;
+  }
+}
+#testimonials h4 {
+  font-family: "Asap", sans-serif;
+  text-transform: uppercase;
+  color: #4d4d4d;
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  #testimonials h4 {
+    text-align: left;
+  }
+}
+#testimonials p {
+  font-family: "Asap", sans-serif;
+  color: #909090;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+#testimonials a.film_roll_prev, #testimonials a.film_roll_next {
+  visibility: hidden;
+}
+#testimonials .film_roll_pager a {
+  width: 10px;
+  height: 10px;
+  border-radius: 0;
+  margin: 40px 5px;
 }
 
 /*# sourceMappingURL=main.css.map */
