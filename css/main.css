@@ -70,6 +70,7 @@ header .title a:hover {
   background-color: #fff;
   border: none;
   text-decoration: none;
+  box-shadow: 0 8px 17px 0 rgba(50, 50, 50, 0.75);
 }
 header .hero img {
   height: auto;
@@ -87,12 +88,14 @@ header .hero img {
   }
 }
 .about_me h2 {
+  text-align: center;
+  text-transform: uppercase;
   font-family: "Asap", sans-serif;
   color: #717171;
   font-size: 46px;
   font-weight: bold;
-  text-transform: uppercase;
   letter-spacing: 8px;
+  text-align: left;
 }
 @media screen and (min-width: 1050px) {
   .about_me h2 {
@@ -131,36 +134,36 @@ header .hero img {
   width: 100%;
 }
 
-.service {
+#service {
   background-color: #f6f6f6;
   padding-top: 120px;
 }
-.service h2 {
+#service h2 {
   text-align: center;
   text-transform: uppercase;
   font-family: "Asap", sans-serif;
   color: #717171;
   font-size: 46px;
   font-weight: bold;
-  margin-bottom: 70px;
   letter-spacing: 8px;
+  margin-bottom: 70px;
 }
-.service h2:before {
+#service h2:before {
   content: " ";
   border-bottom: 4px solid #717171;
   display: block;
   width: 60px;
   margin: auto;
 }
-.service .services {
+#service .services {
   margin-bottom: 85px;
 }
-.service img {
+#service img {
   display: block;
   margin: auto;
   padding-bottom: 20px;
 }
-.service p {
+#service p {
   font-family: "Asap", sans-serif;
   font-size: 24px;
   font-weight: bold;
@@ -168,37 +171,37 @@ header .hero img {
   text-align: center;
 }
 
-.skills {
+#skills {
   padding-top: 50px;
 }
 @media screen and (min-width: 1050px) {
-  .skills {
+  #skills {
     padding-top: 100px;
   }
 }
-.skills h2 {
+#skills h2 {
   text-align: center;
   text-transform: uppercase;
   font-family: "Asap", sans-serif;
   color: #717171;
   font-size: 46px;
   font-weight: bold;
-  margin-bottom: 20px;
   letter-spacing: 8px;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 1050px) {
-  .skills h2 {
+  #skills h2 {
     margin-bottom: 65px;
   }
 }
-.skills h2:before {
+#skills h2:before {
   content: " ";
   border-bottom: 4px solid #717171;
   display: block;
   width: 60px;
   margin: auto;
 }
-.skills img {
+#skills img {
   display: block;
   margin: auto;
   height: auto;
@@ -206,9 +209,64 @@ header .hero img {
   margin-bottom: 30px;
 }
 @media screen and (min-width: 1050px) {
-  .skills img {
+  #skills img {
     margin-bottom: 120px;
   }
+}
+
+#portfolio {
+  background-color: #f6f6f6;
+  padding-top: 125px;
+}
+#portfolio h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Asap", sans-serif;
+  color: #717171;
+  font-size: 46px;
+  font-weight: bold;
+  letter-spacing: 8px;
+  margin-bottom: 45px;
+}
+#portfolio h2:before {
+  content: " ";
+  border-bottom: 4px solid #717171;
+  display: block;
+  width: 60px;
+  margin: auto;
+}
+#portfolio img {
+  margin-bottom: 30px;
+  height: auto;
+  width: 100%;
+}
+#portfolio .load-more {
+  text-align: center;
+  margin-bottom: 125px;
+}
+#portfolio .btn-primary {
+  background-image: none;
+  background-color: transparent;
+  box-shadow: none;
+  border: solid 1px black;
+  border-radius: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #4d4d4d;
+  text-transform: uppercase;
+  padding: 20px 45px;
+}
+#portfolio a:hover {
+  background-color: #fff;
+  border: none;
+  text-decoration: none;
+  box-shadow: 0 8px 17px 0 rgba(50, 50, 50, 0.75);
+}
+#portfolio .well {
+  background-image: none;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
 }
 
 /*# sourceMappingURL=main.css.map */
