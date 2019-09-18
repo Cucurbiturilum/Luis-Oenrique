@@ -348,6 +348,11 @@ header {
     @media screen and (min-width: 768px) {
       text-align: left;
     }
+
+    img {
+      max-width: 160px;
+      max-height: 160px;
+    }
   }
 
   h3 {
@@ -429,6 +434,7 @@ header {
 #contact {
   background-image: url(../images/footer.png);
   padding-top: 120px;
+  position: relative;
 
   h2 {
     @include font-main;
@@ -470,7 +476,8 @@ header {
     display: block;
     margin: auto;
   }
-  .btn-default{
+
+  .btn-default {
     border: none;
     border-radius: 0;
     @include font-main;
@@ -480,22 +487,56 @@ header {
     padding: 0 30px;
     line-height: 40px;
   }
-  .social{
+
+  .social {
     border-top: 1px solid white;
-    div{
+    padding-top: 30px;
+
+    a {
       display: inline-block;
       height: 30px;
       width: 30px;
       background-color: #fff;
-      margin: 30px 10px;
-      font-size: 15px;
+      padding-top: 6px;
       text-align: center;
+      margin: 0 5px;
+
+      i {
+        font-size: 20px;
+        @include title-color;
+      }
+    }
+
+    a:hover {
+      background-color: #0084b4;
+
+      i {
+        color: white;
+      }
+    }
+    .up{
+      position: fixed;
+      right: 0;
+      margin-top: 224px;
+      a{
+        width: 50px;
+        height: 50px;
+        background-color: #98161b;
+        text-align: center;
+        clear: both;
+        float: right;
         i{
-          padding: 6px;
-          font-size: 18px;
-          @include title-color
+          color: white;
+          font-size: 50px;;
         }
+      }
+      a:after{
+        display: block;
+        clear: both;
+        content: "";
       }
     }
   }
 }
+
+
