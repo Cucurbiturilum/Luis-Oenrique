@@ -1,35 +1,20 @@
-@mixin font-main {
-  font-family: 'Asap', sans-serif;
-}
-
-@mixin title-color {
-  color: #4d4d4d;
-}
-
-@mixin text-color {
-  color: #909090;;
-}
-
-@mixin main-color {
-  color: #717171;
-}
-
+$font-main: 'Asap', sans-serif;
+$title-color: #4d4d4d;
+$text-color: #909090;
+$main-color: #717171;
 @mixin title {
   text-align: center;
   text-transform: uppercase;
-  @include font-main;
-  @include main-color;
-  font-size: 30px;
+  font: 30px $font-main;
+  color: $main-color;
   font-weight: bold;
   letter-spacing: 8px;
   @media screen and (min-width: 380px) {
     font-size: 46px;
   }
 }
+$background: #f6f6f6;
 
-@mixin background {
-  background-color: #f6f6f6;
-}
 
 header {
   background: repeating-linear-gradient(
@@ -39,7 +24,8 @@ header {
                   #e2e2e2 200px,
                   #e2e2e2 400px
   );
-  @include font-main;
+  font-family: $font-main;
+
 
   .navbar {
     padding-top: 30px;
@@ -59,9 +45,8 @@ header {
     .navbar-nav {
       li {
         a {
-          @include font-main;
-          font-size: 16px;
-          @include title-color;
+          font: 16px $font-main;;
+          color: $title-color;
           text-transform: uppercase;
         }
 
@@ -82,14 +67,14 @@ header {
     h1 {
       font-size: 60px;
       font-weight: bold;
-      @include title-color;
+      color: $title-color;
       @media screen and (min-width: 380px) {
         font-size: 90px;
       }
     }
 
     p {
-      @include text-color;
+      color: $text-color;
       font-size: 20px;
       font-weight: bold;
       margin-bottom: 30px;
@@ -97,10 +82,11 @@ header {
         font-size: 22px;
       }
     }
+
     a {
       font-size: 16px;
       font-weight: bold;
-      @include title-color;
+      color: $title-color;
       text-transform: uppercase;
       padding: 20px 30px;
       margin-right: 20px;
@@ -155,17 +141,16 @@ header {
   }
 
   p {
-    @include font-main;
+    font: 16px $font-main;
     font-weight: 500;
-    font-size: 16px;
-    @include main-color;
+    color: $main-color;
     margin-bottom: 35px;
   }
 
   a {
     font-size: 16px;
     font-weight: bold;
-    @include main-color;
+    color: $main-color;
     text-transform: uppercase;
     padding: 20px 30px;
     border: solid 1px black;
@@ -182,7 +167,7 @@ header {
 }
 
 #service {
-  @include background;
+  background-color: $background;
   padding-top: 120px;
 
   h2 {
@@ -209,10 +194,9 @@ header {
   }
 
   p {
-    @include font-main;
-    font-size: 24px;
+    font: 24px $font-main;
     font-weight: bold;
-    @include title-color;
+    color: $title-color;
     text-align: center;
   }
 }
@@ -252,7 +236,7 @@ header {
 }
 
 #portfolio {
-  @include background;
+  background-color: $background;
   padding-top: 50px;
   @media screen and (min-width: 1050px) {
     padding-top: 125px;
@@ -293,7 +277,7 @@ header {
     border-radius: 0;
     font-size: 16px;
     font-weight: bold;
-    @include title-color;
+    color: $title-color;
     text-transform: uppercase;
     padding: 20px 45px;
   }
@@ -354,10 +338,9 @@ header {
   }
 
   h3 {
-    @include font-main;
+    font: 30px $font-main;
+    color: $title-color;
     text-transform: uppercase;
-    @include title-color;
-    font-size: 30px;
     font-weight: 500;
     margin: 0;
     text-align: center;
@@ -367,10 +350,9 @@ header {
   }
 
   h4 {
-    @include font-main;
+    font: 12px $font-main;
+    color: $title-color;
     text-transform: uppercase;
-    @include title-color;
-    font-size: 12px;
     font-style: italic;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -381,9 +363,8 @@ header {
   }
 
   p {
-    @include font-main;
-    @include text-color;
-    font-size: 16px;
+    font: 16px $font-main;
+    color: $text-color;
     text-transform: uppercase;
   }
 
@@ -399,12 +380,10 @@ header {
       margin: 40px 5px;
     }
   }
-
-
 }
 
 #funfact {
-  @include background;
+  background-color: $background;
   padding: 65px 0;
 
   img {
@@ -415,9 +394,8 @@ header {
 
   p {
     margin-top: 30px;
-    @include font-main;
-    font-size: 16px;
-    @include title-color;
+    font: 22px $font-main;
+    color: $title-color;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -433,23 +411,26 @@ header {
   background-image: url(../images/footer.png);
   padding-top: 120px;
   position: relative;
-  .up{
+
+  .up {
     position: fixed;
     right: 0;
     bottom: 200px;
-    a{
+
+    a {
       background-color: #fff;
       text-align: center;
       padding: 10px;
-      i{
+
+      i {
         font-size: 20px;
-        @include title-color;
+        color: $title-color;
       }
     }
   }
 
   h2 {
-    @include font-main;
+    font-family: $font-main;
     @include title;
     color: white;
     margin-bottom: 70px;
@@ -474,9 +455,8 @@ header {
   }
 
   input::placeholder, textarea::placeholder {
-    @include font-main;
-    @include title-color;
-    font-size: 16px;
+    font: 16px $font-main;
+    color: $title-color;
   }
 
   .message {
@@ -492,9 +472,8 @@ header {
   .btn-default {
     border: none;
     border-radius: 0;
-    @include font-main;
+    font: 16px $font-main;
     text-transform: uppercase;
-    font-size: 16px;
     background-image: none;
     padding: 0 30px;
     line-height: 40px;
@@ -515,7 +494,7 @@ header {
 
       i {
         font-size: 20px;
-        @include title-color;
+        color: $title-color;
       }
     }
 
